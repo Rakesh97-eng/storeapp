@@ -1,0 +1,116 @@
+.cards{
+    margin: 2%;
+    width: 20%;
+    transition: transform .2s;
+    height: 20rem;
+    background-color:#ececec;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-between;
+
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    border: 1px solid #9ebfdb;
+}
+
+.cardimg:hover{
+    transform: scale(1.1);
+}
+
+.cardimg{
+  font-size: 80px; 
+  color: rgb(179, 131, 72);   
+  align-self: center;
+  transition: transform .2s;
+}
+.categoryimg{
+    font-size: 80px; 
+    color: rgb(179, 131, 72);   
+    align-self: center;
+    transition: transform .2s;
+  }
+
+
+.imgstyle{
+    width: 100px;
+    height: 100px;
+}
+.catimgstyle{
+    width: 200px;
+    height: 200px;
+}
+
+.cardbutton{
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px #b0c3d4 solid;
+}
+
+.buybutton{
+    border: none;
+    color: antiquewhite;
+    width: max-content;
+    font-size: 15px;
+    font-family:sans-serif;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgb(224, 148, 148);
+ }
+.cardbutton:hover{
+    border: 2px #5fb0f7 solid;
+    cursor: pointer;
+}
+
+.buybutton:hover{
+    border: 2px #5fb0f7 solid;
+    cursor: pointer;
+}
+
+
+.cardpara{
+    font-size: 15px;
+    max-width: 75%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.carddiv{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    
+}
+
+.categorycards{
+    margin: 2%;
+   position: relative;
+    transition: transform .2s;
+    height: 30rem;
+    /* background-color:#ececec; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-evenly;
+   
+}
+.categorycards:hover{
+    transform: scale(1.1);
+    border: 1px solid #9ebfdb;
+}
+
+
+
+/* @media(max-width:800px){
+    .cards{
+    
+        flex-wrap: wrap;
+        width: 100%;
+    }
+} */
+

@@ -1,0 +1,20 @@
+.categorycardparent{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: space-around;
+     /* width:100%; */
+}
+
+.categorycard{
+    width: 40%;
+    height: max-content;
+
+    
+}
+
+.categoryheader{
+    width: 100%;
+
+}
+

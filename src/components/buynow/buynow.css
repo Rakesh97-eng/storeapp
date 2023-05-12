@@ -1,0 +1,13 @@
+.buynowbutton{
+    width: fit-content;
+    padding:  0 3% 0 3%;
+    border: none;
+    background-color: rgb(156, 197, 216);
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.buynowbutton:hover{
+    cursor: pointer;
+    border: 2px solid rgb(108, 133, 148);
+}

@@ -1,0 +1,23 @@
+.headercontainer{
+    display: flex;
+    background-color: #e8edf2;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.headerrightchild>button{
+    margin: 5px;
+    border: none;
+    background-color: #e8edf2 ;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+body{
+    font-size: 20px;
+}
+
+.cartvalue{
+    position: relative;
+    top:-10px
+}

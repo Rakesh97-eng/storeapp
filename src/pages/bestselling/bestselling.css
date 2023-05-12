@@ -1,0 +1,38 @@
+.productsfirst{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    justify-content: center;
+}
+
+.productshead{
+    align-self: center;
+    font-size: 40px;
+}
+
+.productcard{
+    margin: 2%;
+    width: 20%;
+    transition: transform .2s;
+    height: 20rem;
+    background-color:#ececec;
+    border-radius: 5px;
+
+}
+
+.productcardparent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productcard:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:800px){
+    .productcardparent{
+        display: block;
+        width: 100%;
+    }
+}
