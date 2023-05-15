@@ -5,8 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Header = ()=>{
 
-
+  const navigate  = useNavigate();
   const {cartproducts} =  useSelector((state)=>state.products);
+
+  const handleroute = (route)=>{
+     navigate(`/${route}`)
+  }
 
   console.log(cartproducts,"cartproduct");
     return(
@@ -16,15 +20,16 @@ const Header = ()=>{
             ShopMart
            </div>
            <div className="headerrightchild">
-            <button >Home</button>
-            <button>Product</button>
-            <button>About</button>
-            <button>Contact us</button>
-            <button>Why me</button>
-            
-            <button >Cart
+            <button onClick={()=>handleroute('')} >Home</button>
+            <button  onClick={()=>handleroute('featured')}>Product</button>
+            <button onClick={()=>handleroute('choose')}>About</button>
+            <button >Contact us</button>
+            <button >Why me</button>
+            <button  onClick={()=>handleroute('cart')}>Cart
               <span className='cartvalue'>{cartproducts.length}</span>
             </button>
+            
+           
           
            
            </div>

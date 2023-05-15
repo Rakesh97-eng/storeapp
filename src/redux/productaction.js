@@ -12,22 +12,7 @@ export const Productaction = ()=>{
                 console.log(res)}
         )    }}
 
-        
-// export const Getbycategory =async (urlvalue)=>{
-//     // let data = await  GetProductsapi(`/products/category/${urlvalue}`,"get")
-//     // console.log(data);
-//     return (dispatch)=>{
-//    console.log("dataaaaafromcategory");
-//         GetProductsapi(`/products/category/${urlvalue}`,"get").then(
-//             (res)=>{
-               
-//                   dispatch(getproducts(res?.data))
-//             }
-//         )
-//     }
-
-   
-// }
+    
 
 export function Getbycategory(urlvalue){
     // let dispatch = useDispatch();

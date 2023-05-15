@@ -11,16 +11,20 @@ const Categoryproduct = () => {
   let dispatch = useDispatch();
   const [categories, setCategories] = useState([]);
   const { categoryproduct, isLoading } = useSelector((state) => state.products);
-  console.log(categoryproduct, "categoryproduct");
+
+
   useEffect(() => {
-    console.log("location ", state.category);
     Getbycategory(state.category).then((res) => {
       dispatch(getproductscategory(res.data.products));
     });
-  }, []);
+  },[]);
 
   useEffect(() => {
     setCategories(categoryproduct);
+    return ()=>{
+      console.log("kkk");
+      setCategories(null)
+    }
   }, [categoryproduct]);
 
   return (

@@ -10,6 +10,7 @@ export const ProductSlice = createSlice({
     initialState:initialvalue,
     reducers:{
        addcart:(state,{payload})=>{
+        console.log("calling cart");
          let sameproducts = state.cartproducts.filter((value)=>value.id === payload.id);
          if(sameproducts.length >0){
             return state
@@ -18,6 +19,14 @@ export const ProductSlice = createSlice({
             state.cartproducts =[...state.cartproducts,payload];
             return state;
          }
+            
+       },
+       removecart:(state,{payload})=>{
+         let sameproducts = state.cartproducts.filter((value)=>value.id !== payload.id);
+         state.cartproducts = sameproducts;
+         console.log("calling cart",state.cartproducts);
+
+         return state;
             
        },
 
@@ -36,6 +45,6 @@ export const ProductSlice = createSlice({
     
 });
 
-export const {getproducts,getproductscategory,addcart} = ProductSlice.actions;
+export const {getproducts,getproductscategory,addcart,removecart} = ProductSlice.actions;
  export default ProductSlice.reducer;
 

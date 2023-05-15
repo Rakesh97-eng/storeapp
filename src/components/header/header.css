@@ -3,6 +3,9 @@
     background-color: #e8edf2;
     justify-content: space-between;
     padding: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .headerrightchild>button{
@@ -13,6 +16,8 @@
     font-size: 17px;
 }
 
+
+
 body{
     font-size: 20px;
 }
@@ -20,4 +25,10 @@ body{
 .cartvalue{
     position: relative;
     top:-10px
+}
+
+@media(max-width:800px){
+    .headerrightchild{
+       display: block;
+    }
 }
